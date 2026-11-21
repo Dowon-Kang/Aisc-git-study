@@ -69,7 +69,7 @@ git switch -c feat/session-form
 
 ## 6. 머지와 정리
 
-- 머지는 관리자가 합니다. 순서: **Issue #2 → #3 → #4 → #5**의 PR 순서(준비된 PR부터 이 순서로). PR 번호는 Issue 다음 번호라서 Issue 번호와 다릅니다(예: Issue #2의 PR이 #6).
+- 머지는 관리자가 합니다. 순서: **Issue #2 → #3 → #4 → #5**의 PR 순서(준비된 PR부터 이 순서로). PR과 Issue는 번호를 함께 쓰기 때문에 PR 번호는 Issue 번호와 다릅니다. 머지 순서는 PR 본문의 `Closes #번호`로 확인합니다.
 - 앞 PR이 머지되면 뒤 PR 담당자는 자기 브랜치에서 최신 main을 반영하고, 충돌이 나면 해결 후 다시 push합니다.
 
 ```bash
