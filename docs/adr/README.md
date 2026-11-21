@@ -11,3 +11,5 @@
 | --- | --- | --- |
 | [0001](0001-localstorage-only.md) | 서버 없이 localStorage에만 저장 | 채택 |
 | [0002](0002-attendance-rate-denominator.md) | 출석률 분모에 모든 일정 포함 | 채택 |
+
+새 ADR은 [TEMPLATE.md](TEMPLATE.md)를 복사해 다음 번호로 시작합니다.
