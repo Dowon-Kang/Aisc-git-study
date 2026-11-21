@@ -1,0 +1,18 @@
+{
+  // 저장할 때 oxlint가 고칠 수 있는 문제를 자동 수정 (oxc.oxc-vscode 확장 필요)
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "always"
+  },
+  // 줄 끝 공백 제거
+  "files.trimTrailingWhitespace": true,
+  // 파일 끝에 빈 줄 하나
+  "files.insertFinalNewline": true,
+  // Windows·macOS 팀원이 섞여도 줄바꿈을 LF로 통일
+  "files.eol": "\n",
+  // 빌드 결과물은 검색에서 제외
+  "search.exclude": {
+    "dist": true
+  },
+  // Copilot Chat이 저장소 루트의 AGENTS.md를 규칙으로 읽음
+  "chat.useAgentsMdFile": true
+}

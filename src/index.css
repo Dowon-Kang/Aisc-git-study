@@ -1,0 +1,9 @@
+:root {
+  font-family: system-ui, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  color: #1f2a24;
+  background: #f4f7f5;
+  line-height: 1.5;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, select { font: inherit; }

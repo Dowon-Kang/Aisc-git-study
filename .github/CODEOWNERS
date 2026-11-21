@@ -1,0 +1,5 @@
+# 공유 규칙·데이터 모양을 바꾸는 PR에는 관리자가 자동으로 리뷰어로 지정됩니다.
+/docs/        @Dowon-Kang
+/.github/     @Dowon-Kang
+/src/domain/  @Dowon-Kang
+/AGENTS.md    @Dowon-Kang
