@@ -1,6 +1,6 @@
 # 협업 규칙
 
-사람인 웹·서버 팀과 이음 팀이 실제로 쓴 규칙을 이 스터디 규모에 맞게 줄였습니다.
+이 저장소에서 모두가 지키는 협업 규칙입니다. 처음 한 번 끝까지 읽고, 헷갈리면 다시 찾아봅니다.
 
 ## 1. 작업 흐름
 
@@ -24,7 +24,7 @@ git switch -c feat/session-form
 | --- | --- |
 | `feat/session-form` · `fix/empty-title` · `docs/readme-commands` | `Feat/Form`(대문자) · `my-branch`(타입 없음) · `feat/일정등록`(한글) |
 
-참고: 사람인 서버는 `feat/#12/kakao-login`, 웹은 `feat/12/search-bar`처럼 이슈 번호를 넣었습니다. 이 저장소는 이슈 번호를 PR 본문의 `Closes #번호`로 연결합니다.
+이슈 번호는 브랜치 이름에 넣지 않고, PR 본문의 `Closes #번호`로 연결합니다.
 
 ## 3. 커밋 메시지
 
@@ -63,13 +63,13 @@ git switch -c feat/session-form
 | 규칙 | 이름·`type`·`key`·커밋 메시지 규칙을 지켰나? |
 | 화면 | 브랜치를 받아 `npm run dev`로 직접 눌러 봤나? 좁은 화면에서 글자·버튼이 깨지지 않나? |
 
-코멘트 말투: 빨리, 부드럽게, 근거와 함께(사람인 웹 README의 리뷰 원칙). 예) "빈 제목일 때 버튼을 눌러 보니 그대로 등록돼요. AC-01에 따라 막아야 할 것 같아요."
+코멘트 말투: 빨리, 부드럽게, 근거와 함께. 예) "빈 제목일 때 버튼을 눌러 보니 그대로 등록돼요. AC-01에 따라 막아야 할 것 같아요."
 
 작성자는 코멘트마다 답글이나 수정 커밋으로 응답하고, 해결되면 **Resolve conversation**을 누릅니다.
 
 ## 6. 머지와 정리
 
-- 머지는 관리자가 합니다. 순서: **Issue #2 → #3 → #4 → #5**의 PR 순서(준비된 PR부터 이 순서로). PR 번호는 Issue 다음 번호라서 Issue 번호와 다릅니다(예: Issue #2의 PR이 #6).
+- 머지는 관리자가 합니다. 순서: **Issue #2 → #3 → #4 → #5**의 PR 순서(준비된 PR부터 이 순서로). PR과 Issue는 번호를 함께 쓰기 때문에 PR 번호는 Issue 번호와 다릅니다. 머지 순서는 PR 본문의 `Closes #번호`로 확인합니다.
 - 앞 PR이 머지되면 뒤 PR 담당자는 자기 브랜치에서 최신 main을 반영하고, 충돌이 나면 해결 후 다시 push합니다.
 
 ```bash
@@ -85,8 +85,3 @@ git push
 
 - `App.tsx` 맨 위 import 줄은 네 기능 모두 추가하므로 충돌이 거의 확실히 납니다. 정답은 보통 “두 쪽 import를 모두 남기기”입니다. 두 사람이 **똑같은 줄**을 추가했다면(예: `MEMBERS` import) Git이 알아서 하나로 합칩니다.
 - 머지 후 브랜치는 삭제합니다.
-
-## 7. 원본 출처
-
-- 사람인 웹 [AGENTS.md](https://github.com/SOPT-all/39-COLLABORATION-WEB-SARAMIN/blob/dev/AGENTS.md) · [README.md](https://github.com/SOPT-all/39-COLLABORATION-WEB-SARAMIN/blob/dev/README.md) — 커밋 타입, 개발 과정, 리뷰 원칙
-- 사람인 서버 [CLAUDE.md](https://github.com/SOPT-all/39-COLLABORATION-SERVER-SARAMIN/blob/develop/CLAUDE.md) — 브랜치 전략, 커밋 규칙, PR 체크리스트

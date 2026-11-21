@@ -1,6 +1,6 @@
 # PRD · AISC Study Hub
 
-작성: 관리자 · 상태: 확정(실습용) · 형식 참고: 이음 [MVP 스펙](https://github.com/NiceTry3675/Individual-Resource-Planning-for-Kids/blob/main/이음-MVP-스펙.md)의 “목표와 범위 · 일정과 역할 분담”
+작성: 관리자 · 상태: 확정(실습용)
 
 ## 1. 문제
 

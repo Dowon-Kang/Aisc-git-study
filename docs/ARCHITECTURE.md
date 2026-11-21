@@ -1,6 +1,6 @@
 # ARCHITECTURE
 
-형식 참고: 사람인 서버 [ARCHITECTURE.md](https://github.com/SOPT-all/39-COLLABORATION-SERVER-SARAMIN/blob/develop/docs/ARCHITECTURE.md)(계층별 책임·데이터 흐름), 사람인 웹 [AGENTS.md](https://github.com/SOPT-all/39-COLLABORATION-WEB-SARAMIN/blob/dev/AGENTS.md)(페이지 전용 vs 공통 폴더)
+이 문서는 “어디에 무엇을 두고, 데이터가 어떻게 흐르는지”를 정합니다. 구조를 바꾸려면 먼저 ADR을 씁니다.
 
 ## 1. 기술 스택
 

@@ -1,6 +1,6 @@
 # DOMAIN · 용어와 미결 사항
 
-형식 참고: 사람인 서버 [DOMAIN.md](https://github.com/SOPT-all/39-COLLABORATION-SERVER-SARAMIN/blob/develop/docs/DOMAIN.md)(용어 정의 + 미결 사항 OQ 표)
+코드와 대화에서 같은 단어를 같은 뜻으로 쓰기 위한 문서입니다.
 
 ## 용어
 

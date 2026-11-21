@@ -1,6 +1,6 @@
 # ADR (Architecture Decision Record)
 
-규칙 출처: 사람인 서버 [docs/adr/README.md](https://github.com/SOPT-all/39-COLLABORATION-SERVER-SARAMIN/blob/develop/docs/adr/README.md)
+중요한 결정을 “왜 그렇게 정했는지”와 함께 남기는 기록입니다.
 
 - 파일명: `NNNN-kebab-case-제목.md`, 번호는 0001부터 순서대로
 - 상태: **제안 · 채택 · 대체됨** 중 하나, 날짜와 관련 OQ를 적는다
