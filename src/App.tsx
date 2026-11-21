@@ -24,6 +24,12 @@ export default function App() {
         {storageError && <p role="alert" className="error">{storageError}</p>}
       </header>
 
+      <section className="card" aria-labelledby="summary-title">
+        <h2 id="summary-title">스터디 요약</h2>
+        {/* Issue #5: 요약 카드가 들어갈 자리 */}
+        <p className="placeholder">#5 요약 카드 담당이 구현합니다.</p>
+      </section>
+
       <section className="card" aria-labelledby="form-title">
         <h2 id="form-title">일정 등록</h2>
         {/* Issue #2: 일정 등록 폼이 들어갈 자리 */}

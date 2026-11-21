@@ -15,7 +15,7 @@ gh label create docs     --color 0075ca --description "문서"           --repo 
 gh label create refactor --color a2eeef --description "구조 개선"      --repo "$REPO" --force
 gh label create init     --color 6e7781 --description "초기 세팅"      --repo "$REPO" --force
 
-echo "▶ 2/5 Issue (docs/issues/2~4 순서대로 → 저장소의 다음 번호부터)"
+echo "▶ 2/5 Issue (docs/issues/2~5 순서대로 → 저장소의 다음 번호부터)"
 for f in docs/issues/[2-9]-*.md; do
   title=$(sed -n '1p' "$f")
   label=$(sed -n '2p' "$f" | sed 's/^labels: //')

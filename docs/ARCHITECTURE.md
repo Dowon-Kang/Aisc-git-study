@@ -19,9 +19,10 @@ src/
 │   ├── members.ts             #   MEMBERS
 │   └── sample.ts              #   예시 데이터
 └── features/                  # 기능별 폴더                                      — 각 담당자
-    ├── session-form/          #   #2 팀원 A
-    ├── session-list/          #   #3 팀원 B
-    └── attendance/            #   #4 팀원 C
+    ├── session-form/          #   #2 짝 1
+    ├── session-list/          #   #3 짝 1
+    ├── attendance/            #   #4 짝 2
+    └── summary/               #   #5 짝 2
 ```
 
 `domain/`을 바꿔야 하면 기능 PR에 섞지 말고, 관리자에게 따로 Issue로 요청합니다.
@@ -56,8 +57,9 @@ localStorage ──readSessions──▶ App의 sessions 상태 ──props─�
 | #2 | `createSession(input, id): Session` | `SessionForm({ onAdd })` | `<SessionForm onAdd={s => updateSessions([s, ...sessions])} />` |
 | #3 | `filterSessions(sessions, keyword): Session[]` | `SessionList({ sessions, memberCount })` | `<SessionList sessions={sessions} memberCount={MEMBERS.length} />` |
 | #4 | `toggleAttendance(sessions, id, member)` · `attendanceRate(sessions, member)` | `AttendancePanel({ sessions, members, onChange })` | `<AttendancePanel sessions={sessions} members={MEMBERS} onChange={updateSessions} />` |
+| #5 | `summarizeSessions(sessions): { total, averageAttendees, latest }` | `SummaryCards({ sessions })` | `<SummaryCards sessions={sessions} />` |
 
-각자 App.tsx에서 **자기 Issue 주석이 있는 자리의 `<p className="placeholder">` 한 줄을 컴포넌트로 바꾸고**, 맨 위에 import를 추가합니다. 세 명 모두 import 줄을 추가하므로, 뒤에 머지되는 PR은 이 부분에서 충돌이 날 수 있습니다. 충돌 해결 방법은 CONTRIBUTING.md 6절을 봅니다.
+각자 App.tsx에서 **자기 Issue 주석이 있는 자리의 `<p className="placeholder">` 한 줄을 컴포넌트로 바꾸고**, 맨 위에 import를 추가합니다. 네 기능 모두 import 줄을 추가하므로, 뒤에 머지되는 PR은 이 부분에서 충돌이 날 수 있습니다. 충돌 해결 방법은 CONTRIBUTING.md 6절을 봅니다.
 
 ## 6. 검사
 
