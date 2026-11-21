@@ -1,6 +1,9 @@
 chore: 프론트 정적 배포
 labels: docs
 ---
+## 해결할 문제 (P4)
+앱 주소가 없어서 npm run dev를 켠 내 컴퓨터에서만 열린다.
+
 ## 작업 설명
 `npm run build` 결과를 공개 주소로 배포해 팀원 누구나 휴대폰에서 열어 볼 수 있게 합니다. (ROADMAP AWS)
 

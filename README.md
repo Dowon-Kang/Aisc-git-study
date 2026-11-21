@@ -47,7 +47,7 @@ PR을 올리면 GitHub Actions가 `lint → test → build`를 자동으로 실�
 3. [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — 폴더 구조와 기능 붙이는 방법
 4. [docs/DOMAIN.md](docs/DOMAIN.md) — 용어 정의와 미결 사항
 5. [AGENTS.md](AGENTS.md) — AI 도구에게 주는 작업 규칙
-6. [docs/ROADMAP.md](docs/ROADMAP.md) — 실습 후 백엔드·DB·프론트·앱·AI·AWS로 넓히는 발전 트랙
+6. [docs/ROADMAP.md](docs/ROADMAP.md) — 실습 후 직접 써 보고 찾은 문제에서 다음 기능 고르기·맡기
 
 ## 폴더 구조
 
