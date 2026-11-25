@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { SAMPLE_SESSIONS } from './domain/sample';
 import { readSessions, saveSessions } from './domain/storage';
 import type { Session } from './domain/types';
+import { SessionForm } from './features/session-form/SessionForm';
 import './App.css';
 
 export default function App() {
@@ -33,7 +34,7 @@ export default function App() {
       <section className="card" aria-labelledby="form-title">
         <h2 id="form-title">일정 등록</h2>
         {/* Issue #2: 일정 등록 폼이 들어갈 자리 */}
-        <p className="placeholder">#2 일정 등록 담당이 구현합니다.</p>
+        <SessionForm onAdd={s => updateSessions([s, ...sessions])} />
       </section>
 
       <section className="card" aria-labelledby="list-title">
