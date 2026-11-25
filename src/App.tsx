@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { MEMBERS } from './domain/members';
 import { SAMPLE_SESSIONS } from './domain/sample';
 import { readSessions, saveSessions } from './domain/storage';
 import type { Session } from './domain/types';
+import { SessionList } from './features/session-list/SessionList';
 import './App.css';
 
 export default function App() {
@@ -39,7 +41,7 @@ export default function App() {
       <section className="card" aria-labelledby="list-title">
         <h2 id="list-title">일정 목록</h2>
         {/* Issue #3: 일정 목록·검색이 들어갈 자리 */}
-        <p className="placeholder">#3 일정 목록 담당이 구현합니다.</p>
+        <SessionList sessions={sessions} memberCount={MEMBERS.length} />
       </section>
 
       <section className="card" aria-labelledby="attendance-title">
