@@ -1,0 +1,5 @@
+.session-form { display: grid; gap: 10px; }
+.session-form-field { display: grid; gap: 4px; font-size: 0.95rem; }
+.session-form-field input { min-width: 0; padding: 8px 10px; border: 1px solid #b9cbbf; border-radius: 8px; font: inherit; }
+.session-form-error { margin: 0; }
+.session-form-submit { justify-self: start; }
