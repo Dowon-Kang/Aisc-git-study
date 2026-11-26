@@ -81,10 +81,11 @@ git switch -c feat/session-form
 ```bash
 git fetch origin
 git merge origin/main
-# 충돌 파일 열기 → <<<<<<< ======= >>>>>>> 사이에서 두 쪽을 모두 살려 정리
-git diff --name-only --diff-filter=U   # 비어 있으면 해결 끝
+# 충돌 파일 열기 → <<<<<<< ======= >>>>>>> 사이에서 두 쪽을 모두 살려 정리하고 마커 세 줄 삭제
+git diff --check                       # 아무것도 안 나오면 마커가 모두 지워진 것
 npm run lint && npm run test && npm run build
 git add src/App.tsx
+git status                             # "Unmerged paths"가 없어야 함
 git commit --no-edit
 git push
 ```
